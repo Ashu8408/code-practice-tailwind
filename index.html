@@ -1,67 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Practice Tailwind</title>
+  <meta charset="UTF-8">
+  <title>Tailwind with CLI</title>
+  <link rel ="stylesheet" href="./output.css" rel="stylesheet">
 </head>
-<body class = "bg-gray-600">
+
+<body class =
+"bg-lime-200"
+>
+<ul class = "bg-red-600 text-white m-0 flex [&>*]:flex">  
     
-    <h1 class =
-     "text-white text-6xl p-5 hover"
-     > Brush up Tailwind 
-    </h1>
+  <!--[&>*]:flex adds style(flex) to all child elements-->
+  
+   <li><a class = "p-3 hover:bg-cyan-300" href = "#"> Home </a></li>
+   <li><a class = "p-3 hover:bg-cyan-300" href = "#"> Products </a></li>
+   <li><a class = "p-3 hover:bg-cyan-300" href = "#"> Solutions+ </a></li>
+   <li><a class = "p-3 hover:bg-cyan-300" href = "#"> Pricing </a></li>
+   <li><a class = "p-3 hover:bg-cyan-300" href = "#"> Our story+ </a></li>
+</ul>
+
+
+<ul class = "h-14 bg-gradient-to-r from-cyan-500 to-blue-500 text-white m-0 flex [&>*]:flex  [&>*]:p-3 hover:bg-red-800">  
     
-    <button class = 
-    "text-yellow-300 border p-2 bg-red-600 rounded-[15px]"
-    > Click me!!</button>
-
-    
-    <h2 class = "text-white p-2">(add a line break here)</h2>
-    
-
-    <h1 class = "text-white text-2xl p-3">play with grid and colors</h1>
-
+  <!--[&>*]:flex adds style(flex) to all child elements-->
+  
+   <li><a  href = "#"> Home </a></li>
+   <li><a  href = "#"> Products </a></li>
+   <li><a  href = "#"> Solutions+ </a></li>
+   <li><a  href = "#"> Pricing </a></li>
+   <li><a  href = "#"> Our story+ </a></li>
+</ul>
 
 
-    <div class="grid grid-rows-10 gap-2">
-          <!-- ... -->
-           
+    <div>
+      <img > Healthgraph logo foss health logo 
+    </div>
 
-        <div class="grid grid-cols-11 gap-2">
-            <div class="bg-white aspect-square w-20 h-20">0</div>
-             
-            <!-- 1st row-->
-            <div class="bg-red-50 aspect-square w-20 h-20">1</div>
-            <div class="bg-red-100 aspect-square w-20 h-20">2</div>
-            <div class="bg-red-200 aspect-square w-20 h-20">3</div>
-            <div class="bg-red-300 aspect-square w-20 h-20">4</div>
-            <div class="bg-red-400 aspect-square w-20 h-20">5</div>
-            <div class="bg-red-500 aspect-square w-20 h-20">6</div>
-            <div class="bg-red-600 aspect-square w-20 h-20">7</div>
-            <div class="bg-red-700 aspect-square w-20 h-20">8</div>
-            <div class="bg-red-800 aspect-square w-20 h-20">9</div>
-            <div class="bg-red-900 aspect-square w-20 h-20">10</div>
-          </div>
-          <h1 class = "text-pink-500">text check-3</h1>
+  </h1>
+
+<!--
+    <div class = "h-14 bg-gradient-to-r from-cyan-500 to-blue-500">
+    <ul class = "text-white flex p-3 m-0">
+      <li>test text 1</li>
+      <li>test text 2</li>
+      <li>test text 3</li>
+      <li class = "hover:bg-red-300">test text 4</li>
+    </ul>
+  </div>
+  
+-->
+
+  <div class="flex justify-center">
+    <button class =  "bg-green-300 text-blue-50 rounded p-3 m-4" >     
+      button name
+    </button>
+  </div>
+
+  <p class = "text-red-600">(fix the hover in anchor tag with gradient)</p>  
 
 
-          <!-- columns-->
-        <div class="bg-sky-50 aspect-square w-20 h-20">1
-            <h1 class = "text-pink-500">text check-2</h1>
-        </div>
-        <div class="bg-sky-100 aspect-square w-20 h-20">2</div>
-        <div class="bg-sky-200 aspect-square w-20 h-20">3</div>
-        <div class="bg-sky-300 aspect-square w-20 h-20">4</div>
-        <div class="bg-sky-400 aspect-square w-20 h-20">5</div>
-        <div class="bg-sky-500 aspect-square w-20 h-20">6</div>
-        <div class="bg-sky-600 aspect-square w-20 h-20">7</div>
-        <div class="bg-sky-700 aspect-square w-20 h-20">8</div>
-        <div class="bg-sky-800 aspect-square w-20 h-20">9</div>
-        <div class="bg-sky-900 aspect-square w-20 h-20">10</div>
-      </div>
+  <div class = " bg-white text-2xl">
+    <br> 
+    <p class = " hover:bg-black hover:text-green-500 text-2xl">
+      Working with colors
+    </p>
+    <br>
+    <p class = "text-blue-50">Learning text colors in tailwind </p>
+    <p class = "text-blue-200">Learning text colors in tailwind </p>
+    <p class = "text-blue-400">Learning text colors in tailwind </p>
+    <p class = "text-blue-600">Learning text colors in tailwind </p>
+    <br>
 
-    <div class = "text-pink-500">text check-1</div>
+    <p class = "bg-red-100">Learning text colors in tailwind </p>
+    <p class = "bg-red-300">Learning text colors in tailwind </p>
+    <p class = "bg-red-500">Learning text colors in tailwind </p>
+    <p class = "bg-red-800">Learning text colors in tailwind </p>
+    <br>
 
-    
+    <p class = "border-yellow-100 border-4">Learning text colors in tailwind </p>
+    <p class = "border-yellow-300 border-4">Learning text colors in tailwind </p>
+    <p class = "border-yellow-500 border-4">Learning text colors in tailwind </p>
+    <p class = "border-yellow-800 border-4">Learning text colors in tailwind </p>
+    <br>
+
+    <p class = "outline-blue-100 outline outline-8">Learning text colors in tailwind </p>
+    <p class = "outline-blue-300 outline outline-8">Learning text colors in tailwind </p>
+    <p class = "outline-blue-500 outline outline-8">Learning text colors in tailwind </p>
+    <p class = "outline-blue-800 outline outline-8">Learning text colors in tailwind </p>
+    <br>
+  </div>
+
+  <div class = " bg-white text-2xl">
+    <p class = " bg-white  hover:bg-black hover:text-green-500 text-2xl">
+      Working with margin and padding
+    </p>
+    <br>
+  </div>
+
 </body>
 </html>
